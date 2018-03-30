@@ -2,7 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/hello-world/</loc>
+    <loc>https://itchyhiker.com/New-Day-of-ItchyHiker/</loc>
+    
+    <lastmod>2018-03-30T11:06:54.233Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://itchyhiker.com/works/index.html</loc>
+    
+    <lastmod>2018-03-30T10:44:12.759Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://itchyhiker.com/about/index.html</loc>
+    
+    <lastmod>2018-03-30T10:43:21.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://itchyhiker.com/hello-world/</loc>
     
     <lastmod>2018-03-26T08:18:24.359Z</lastmod>
     

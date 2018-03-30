@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2018-03-26T08:18:24.359Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://itchyhiker.com/"/>
+  <updated>2018-03-30T11:06:54.233Z</updated>
+  <id>https://itchyhiker.com/</id>
   
   <author>
     <name>Vincent</name>
@@ -17,9 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>New Day of ItchyHiker</title>
+    <link href="https://itchyhiker.com/New-Day-of-ItchyHiker/"/>
+    <id>https://itchyhiker.com/New-Day-of-ItchyHiker/</id>
+    <published>2018-03-30T11:06:54.000Z</published>
+    <updated>2018-03-30T11:06:54.233Z</updated>
+    
+    <content type="html"><![CDATA[<p>#<br>Hello world!<br>2018-03-30-17:00</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#&lt;br&gt;Hello world!&lt;br&gt;2018-03-30-17:00&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="Diary" scheme="https://itchyhiker.com/tags/Diary/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/hello-world/"/>
-    <id>http://yoursite.com/hello-world/</id>
+    <link href="https://itchyhiker.com/hello-world/"/>
+    <id>https://itchyhiker.com/hello-world/</id>
     <published>2018-03-26T08:18:24.359Z</published>
     <updated>2018-03-26T08:18:24.359Z</updated>
     
