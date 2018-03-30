@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://itchyhiker.com/"/>
-  <updated>2018-03-30T12:40:01.280Z</updated>
+  <updated>2018-03-30T14:04:49.615Z</updated>
   <id>https://itchyhiker.com/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://itchyhiker.com/New-Day-of-ItchyHiker/"/>
     <id>https://itchyhiker.com/New-Day-of-ItchyHiker/</id>
     <published>2018-03-30T11:06:54.000Z</published>
-    <updated>2018-03-30T12:40:01.280Z</updated>
+    <updated>2018-03-30T14:04:49.615Z</updated>
     
-    <content type="html"><![CDATA[<p>#Hello world!<br>2018-03-30-17:00<br><a id="more"></a></p><p>##HitchyHiker的起源</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world!"></a>Hello world!</h1><p>2018-03-30-17:00<br><a id="more"></a></p><h2 id="HitchyHiker的起源"><a href="#HitchyHiker的起源" class="headerlink" title="HitchyHiker的起源"></a>HitchyHiker的起源</h2>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;#Hello world!&lt;br&gt;2018-03-30-17:00&lt;br&gt;
+      &lt;h1 id=&quot;Hello-world&quot;&gt;&lt;a href=&quot;#Hello-world&quot; class=&quot;headerlink&quot; title=&quot;Hello world!&quot;&gt;&lt;/a&gt;Hello world!&lt;/h1&gt;&lt;p&gt;2018-03-30-17:00&lt;br&gt;
     
     </summary>
     
