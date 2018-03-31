@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://itchyhiker.com/"/>
-  <updated>2018-03-31T07:18:44.451Z</updated>
+  <updated>2018-03-31T09:28:07.461Z</updated>
   <id>https://itchyhiker.com/</id>
   
   <author>
@@ -17,33 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>图像数据集大全</title>
-    <link href="https://itchyhiker.com/%E5%9B%BE%E5%83%8F%E6%95%B0%E6%8D%AE%E9%9B%86%E5%A4%A7%E5%85%A8/"/>
-    <id>https://itchyhiker.com/图像数据集大全/</id>
-    <published>2018-03-31T07:16:45.000Z</published>
-    <updated>2018-03-31T07:18:44.451Z</updated>
-    
-    <content type="html"><![CDATA[<p>记录自己常用的图片数据集<br><a id="more"></a></p><ol><li><a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="noopener">MNIST</a>: 机器学习，深度学习，计算机视觉入门数据集(hello world级别)。0-9手写数字数据，包含60,000张28<em>28的二值训练图像，10,1000张28</em>28测试图像。</li><li><a href="http://www.cs.toronto.edu/~kriz/cifar.html" target="_blank" rel="noopener">CIFAR-10</a>: 10类物体数据集(airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck)，包含60,000张32<em>32</em>3的彩色图片，每类6000张。一共分为6个batch, 5个训练batch, 1个测试batch，每个batch 10,000张。</li><li><a href="http://lms.comp.nus.edu.sg/research/NUS-WIDE.htm" target="_blank" rel="noopener">NUS-WIDE</a>：新加坡国立大学 Lab for Media Search 创建的网络数据集，包括：1) 269,648 张采集自Flickr图片和5018个关联标签; 2) 从这些图片中提取的6种低级特征，64-D颜色直方图，73-D边缘直方图，128小波纹理， 255-D块方式颜色矩和基于SIFT描述的500-D 词汇包(bag od words) 3) 可用于评估的81个概念。这个数据集可以用来确定网络图像注释和检索的一些研究问题。还使用k-NN算法从标签数据学习来提供网络图像注释的基线结果。这些基础结果显示，可以从这些数据中学习以帮助进行一般的图像检索。</li><li><a href="http://www.vision.caltech.edu/Image_Datasets/Caltech101/" target="_blank" rel="noopener">CalTech101/256</a>: 101类物体数据集，每一类40-800张图片，大多数是每一类50张,每张图片大小大约是300*200。</li></ol><hr><p><a href="http://www.cvpapers.com/datasets.html" target="_blank" rel="noopener">CVPaper维护的数据集大全</a><br><a href="https://deeplearning4j.org/cn/opendata" target="_blank" rel="noopener">深度学习开放数据集</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;记录自己常用的图片数据集&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Tools/Wheels" scheme="https://itchyhiker.com/categories/Tools-Wheels/"/>
-    
-    
-      <category term="ComputerVision" scheme="https://itchyhiker.com/tags/ComputerVision/"/>
-    
-  </entry>
-  
-  <entry>
     <title>The Economist A lose lose deal</title>
     <link href="https://itchyhiker.com/The-Economist-A-lost-lose-deal/"/>
     <id>https://itchyhiker.com/The-Economist-A-lost-lose-deal/</id>
-    <published>2018-03-31T00:48:25.838Z</published>
-    <updated>2018-03-31T00:48:25.837Z</updated>
+    <published>2018-03-31T09:28:07.000Z</published>
+    <updated>2018-03-31T09:28:07.461Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><ol><li>目前虽然特朗普还没有发起贸易战争，但是他已经在到处对各国的钢铁和铝制品征收关税。日本和欧洲各国都在征求豁免权。</li><li>中国的表现更克制，认为两国应该寻求双赢的结果。作为美国的竞争对手，中国知道自己不可能从这次征收关税中幸免，不过对美国的钢铁和铝出口量只占占GDP的3%，不足一提。</li><li>中国担心的是另外两件事：<br>1) Trump要求中国将对美国的3750亿美元双边贸易额盈余减少1000亿美元。<br>2) Trump想就中国盗取美国公司秘密而制裁中国。他将对从中国进口的超过600亿美元的商品征收关税。这些商品主要是高科技产品和通信产品。</li><li>不久以前中国政府官员还以为他们已经摸清了特朗普的底细。在9月对中国的国事访问中签下了2500亿美元的贸易订单。</li><li>让中国减少1000亿美元的贸易顺差，这从技术层面而言是荒唐可笑的。</li><li>但是这项要求帮助中国理清了思路，他们需要让特朗普大赢一次。</li><li>但是如果美国对中国的知识产权采取严厉惩罚，中国的应对将会强硬的多。习近平会让外界知道自己不是好欺负的。</li><li>令人担忧的是，在贸易消耗战当中，中美双方都认为自己有优势。美国认为中国的贸易额大，损失也就大，中国认为自己对美国的贸易额占GDP的比重小。和中国一贯奉行的双赢宗旨相反，眼下的趋势极有可能试一次两败俱伤之战。</li></ol><h2 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title="Vocabulary"></a>Vocabulary</h2><ul><li>placate: 抚慰，平息<ul><li>placebo: 安慰剂</li></ul></li><li>splutter: to speak quickly and with difficulty, making soft spitting sounds, because you are angry or embarassed.</li><li>reprieve: 缓刑，暂缓</li><li>retaliate: to do sth harmful to sb because they have harmed you first.</li><li>ostensible:　表面的，假装的，看得出的<br>  ＋<em>Ostensibly he was on a business trip, but he spent most of the time on the beach.</em></li><li>ostensibly: 显然, 外表，表面</li><li>glow: 1)send out light and heat without flame 2) be look or feel warm or red<ul><li><em>1) her glowing cheeks 2) a cigarate glowed in the dark</em>  </li></ul></li><li>asendancy: 优势，支配地位</li><li>hefty: 重的，肌肉发达的, big and heavy</li><li>in a pinch: 必要时，在紧要关头</li><li>have the making of sth:   to have the qualities or skills necessary to do a particular job, to become that thing.<ul><li><em>Godfrey had the makings of a successful journalist.</em></li></ul></li><li>bromide: 陈词滥调</li><li>lexicon：词汇词典</li><li></li><li>risible: 可笑的，荒唐的<ul><li><em>the entire proposal is risible, it will not be accepted</em></li></ul></li><li>have the meansure of someone: to form an opinion about sb’s character so that you can deal with them </li><li>in a pinch: 紧要关头</li><li>hawkish adviser: 鹰派幕僚</li><li>pushover: 容易做的工作，易被劝服的人，易被击败的人</li><li>stiff: firm and difficult to bend or move</li></ul>]]></content>
     
@@ -67,54 +45,24 @@
   </entry>
   
   <entry>
-    <title>First Test Demo(CS231n Lecture *)</title>
-    <link href="https://itchyhiker.com/First-Test-Demo/"/>
-    <id>https://itchyhiker.com/First-Test-Demo/</id>
-    <published>2018-03-30T14:44:00.000Z</published>
-    <updated>2018-03-30T14:57:55.828Z</updated>
+    <title>图像数据集大全</title>
+    <link href="https://itchyhiker.com/Computer-Vision-Datasets/"/>
+    <id>https://itchyhiker.com/Computer-Vision-Datasets/</id>
+    <published>2018-03-31T07:16:45.000Z</published>
+    <updated>2018-03-31T09:30:36.703Z</updated>
     
-    <content type="html"><![CDATA[<p>[TOC]</p><p>##So far this week</p><ul><li>Edge detection</li><li>RANSAC</li><li>SIFT</li><li>K-Means</li><li>Linear classifier</li><li>Mean-shift</li><li>PCA/Eigenfaces</li><li><p>Image features<br>##Current Research<br><img src="./1512948999177.png" alt="Alt text"></p></li><li><p>Learning hierarchical representations from data</p></li><li>End-to-end learning: raw inputs to predictions</li><li>can use a small set of simple tools to solve many problems</li><li>has led to rapid progress on many problems</li><li>Inspired by the brain(very loosely!)</li></ul><p>##Deep learning for different problems</p><h3 id="vision-tasks"><a href="#vision-tasks" class="headerlink" title="vision tasks"></a>vision tasks</h3><ul><li>visual recognition<br><img src="./1512949466324.png" alt="Alt text"><br><img src="./1512949506054.png" alt="Alt text"></li><li>object detection: what and where<br><img src="./1512949600151.png" alt="Alt text"></li><li>object segmentation</li><li>image caption</li><li>visual question answering</li><li>super resolution</li><li>image retrieval</li><li>style transfer<h3 id="outside-vision-tasks"><a href="#outside-vision-tasks" class="headerlink" title="outside vision tasks"></a>outside vision tasks</h3></li><li>Machine Translation</li><li>Text Synthesis</li><li>Speech Recognition</li><li>Speech Synthesis</li></ul><h2 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h2><p>Data-driven approach:</p><ol><li>collect a dataset of images and labels</li><li>use machine learning to train an image calssifier</li><li>evaluate the classifier on a withheld set of test images<br><img src="./1512950593146.png" alt="Alt text"><br>feature learning<br>what is feature learning?[^1]<br><img src="./1512950762827.png" alt="Alt text"><br>deep learning<br><img src="./1512950785202.png" alt="Alt text"></li></ol><h2 id="Supervised-learning"><a href="#Supervised-learning" class="headerlink" title="Supervised learning"></a>Supervised learning</h2><p><img src="./1512951055407.png" alt="Alt text"></p><h3 id="linear-regression"><a href="#linear-regression" class="headerlink" title="linear regression"></a>linear regression</h3><p><img src="./1512956741961.png" alt="Alt text"></p><p>###neural network<br><img src="./1512956783266.png" alt="Alt text"><br>neural networks with many layers<br><img src="./1512956866393.png" alt="Alt text"></p><p>[^1]:<br>In Machine Learning, feature learning or representation learningis a set of techniques that learn a feature: a transformation of raw data input to a representation that can be effectively exploited in machine learning tasks. This obviates manual feature engineering, which is otherwise necessary, and allows a machine to both learn at a specific task (using the features) and learn the features themselves.<br>Feature learning is motivated by the fact that machine learning tasks such as classification often require input that is mathematically and computationally convenient to process. However, real-world data such as images, video, and sensor measurement is usually complex, redundant, and highly variable. Thus, it is necessary to discover useful features or representations from raw data. Traditional hand-crafted features often require expensive human labor and often rely on expert knowledge. Also, they normally do not generalize well. This motivates the design of efficient feature learning techniques, to automate and generalize this.<br>Feature learning can be divided into two categories: supervised and unsupervised feature learning, analogous to these categories in machine learning generally.<br>In supervised feature learning, features are learned with labeled input data. Examples include Supervised Neural Networks, Multilayer Perceptron, and (supervised) dictionary Learning.<br>In unsupervised feature learning, features are learned with unlabeled input data. Examples include dictionary learning, independent component analysis, autoencoders, and various forms of clustering.</p>]]></content>
+    <content type="html"><![CDATA[<p>记录自己常用的图片数据集<br><a id="more"></a></p><ol><li><a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="noopener">MNIST</a>: 机器学习，深度学习，计算机视觉入门数据集(hello world级别)。0-9手写数字数据，包含60,000张28<em>28的二值训练图像，10,1000张28</em>28测试图像。</li><li><a href="http://www.cs.toronto.edu/~kriz/cifar.html" target="_blank" rel="noopener">CIFAR-10</a>: 10类物体数据集(airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck)，包含60,000张32<em>32</em>3的彩色图片，每类6000张。一共分为6个batch, 5个训练batch, 1个测试batch，每个batch 10,000张。</li><li><a href="http://lms.comp.nus.edu.sg/research/NUS-WIDE.htm" target="_blank" rel="noopener">NUS-WIDE</a>：新加坡国立大学 Lab for Media Search 创建的网络数据集，包括：1) 269,648 张采集自Flickr图片和5018个关联标签; 2) 从这些图片中提取的6种低级特征，64-D颜色直方图，73-D边缘直方图，128小波纹理， 255-D块方式颜色矩和基于SIFT描述的500-D 词汇包(bag od words) 3) 可用于评估的81个概念。这个数据集可以用来确定网络图像注释和检索的一些研究问题。还使用k-NN算法从标签数据学习来提供网络图像注释的基线结果。这些基础结果显示，可以从这些数据中学习以帮助进行一般的图像检索。</li><li><a href="http://www.vision.caltech.edu/Image_Datasets/Caltech101/" target="_blank" rel="noopener">CalTech101/256</a>: 101类物体数据集，每一类40-800张图片，大多数是每一类50张,每张图片大小大约是300*200。</li></ol><hr><p><a href="http://www.cvpapers.com/datasets.html" target="_blank" rel="noopener">CVPaper维护的数据集大全</a><br><a href="https://deeplearning4j.org/cn/opendata" target="_blank" rel="noopener">深度学习开放数据集</a></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;##So far this week&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Edge detection&lt;/li&gt;
-&lt;li&gt;RANSAC&lt;/li&gt;
-&lt;li&gt;SIFT&lt;/li&gt;
-&lt;li&gt;K-Means&lt;/li&gt;
-&lt;li&gt;Linear classifier&lt;/li
-      
+      &lt;p&gt;记录自己常用的图片数据集&lt;br&gt;
     
     </summary>
     
+      <category term="Tools/Wheels" scheme="https://itchyhiker.com/categories/Tools-Wheels/"/>
     
-      <category term="DeepLearning" scheme="https://itchyhiker.com/tags/DeepLearning/"/>
     
       <category term="ComputerVision" scheme="https://itchyhiker.com/tags/ComputerVision/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>New Day of ItchyHiker</title>
-    <link href="https://itchyhiker.com/New-Day-of-ItchyHiker/"/>
-    <id>https://itchyhiker.com/New-Day-of-ItchyHiker/</id>
-    <published>2018-03-30T11:06:54.000Z</published>
-    <updated>2018-03-30T14:04:49.615Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world!"></a>Hello world!</h1><p>2018-03-30-17:00<br><a id="more"></a></p><h2 id="HitchyHiker的起源"><a href="#HitchyHiker的起源" class="headerlink" title="HitchyHiker的起源"></a>HitchyHiker的起源</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Hello-world&quot;&gt;&lt;a href=&quot;#Hello-world&quot; class=&quot;headerlink&quot; title=&quot;Hello world!&quot;&gt;&lt;/a&gt;Hello world!&lt;/h1&gt;&lt;p&gt;2018-03-30-17:00&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Diary" scheme="https://itchyhiker.com/tags/Diary/"/>
     
   </entry>
   
