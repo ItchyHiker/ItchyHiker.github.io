@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="DeepLearning,ComputerVision," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="ItchyHiker" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="[TOC] ##So far this week  Edge detection RANSAC SIFT K-Means Linear classifier Mean-shift PCA/Eigenfaces Image features##Current Research  Learning hierarchical representations from data  End-to-end l">
+<meta name="keywords" content="DeepLearning,ComputerVision">
+<meta property="og:type" content="article">
+<meta property="og:title" content="First Test Demo(CS231n Lecture *)">
+<meta property="og:url" content="https://itchyhiker.com/First-Test-Demo/index.html">
+<meta property="og:site_name" content="ItchyHiker">
+<meta property="og:description" content="[TOC] ##So far this week  Edge detection RANSAC SIFT K-Means Linear classifier Mean-shift PCA/Eigenfaces Image features##Current Research  Learning hierarchical representations from data  End-to-end l">
+<meta property="og:image" content="https://itchyhiker.com/First-Test-Demo/1512948999177.png">
+<meta property="og:image" content="https://itchyhiker.com/First-Test-Demo/1512949466324.png">
+<meta property="og:image" content="https://itchyhiker.com/First-Test-Demo/1512949506054.png">
+<meta property="og:image" content="https://itchyhiker.com/First-Test-Demo/1512949600151.png">
+<meta property="og:image" content="https://itchyhiker.com/First-Test-Demo/1512950593146.png">
+<meta property="og:image" content="https://itchyhiker.com/First-Test-Demo/1512950762827.png">
+<meta property="og:image" content="https://itchyhiker.com/First-Test-Demo/1512950785202.png">
+<meta property="og:image" content="https://itchyhiker.com/First-Test-Demo/1512951055407.png">
+<meta property="og:image" content="https://itchyhiker.com/First-Test-Demo/1512956741961.png">
+<meta property="og:image" content="https://itchyhiker.com/First-Test-Demo/1512956783266.png">
+<meta property="og:image" content="https://itchyhiker.com/First-Test-Demo/1512956866393.png">
+<meta property="og:updated_time" content="2018-03-30T14:57:55.828Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="First Test Demo(CS231n Lecture *)">
+<meta name="twitter:description" content="[TOC] ##So far this week  Edge detection RANSAC SIFT K-Means Linear classifier Mean-shift PCA/Eigenfaces Image features##Current Research  Learning hierarchical representations from data  End-to-end l">
+<meta name="twitter:image" content="https://itchyhiker.com/First-Test-Demo/1512948999177.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://itchyhiker.com/First-Test-Demo/"/>
+
+
+
+
+
+  <title>First Test Demo(CS231n Lecture *) | ItchyHiker</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ItchyHiker</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://itchyhiker.com/First-Test-Demo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Vincent">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ItchyHiker">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">First Test Demo(CS231n Lecture *)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-30T14:44:00+00:00">
+                2018-03-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>[TOC]</p>
+<p>##So far this week</p>
+<ul>
+<li>Edge detection</li>
+<li>RANSAC</li>
+<li>SIFT</li>
+<li>K-Means</li>
+<li>Linear classifier</li>
+<li>Mean-shift</li>
+<li>PCA/Eigenfaces</li>
+<li><p>Image features<br>##Current Research<br><img src="./1512948999177.png" alt="Alt text"></p>
+</li>
+<li><p>Learning hierarchical representations from data</p>
+</li>
+<li>End-to-end learning: raw inputs to predictions</li>
+<li>can use a small set of simple tools to solve many problems</li>
+<li>has led to rapid progress on many problems</li>
+<li>Inspired by the brain(very loosely!)</li>
+</ul>
+<p>##Deep learning for different problems</p>
+<h3 id="vision-tasks"><a href="#vision-tasks" class="headerlink" title="vision tasks"></a>vision tasks</h3><ul>
+<li>visual recognition<br><img src="./1512949466324.png" alt="Alt text"><br><img src="./1512949506054.png" alt="Alt text"></li>
+<li>object detection: what and where<br><img src="./1512949600151.png" alt="Alt text"></li>
+<li>object segmentation</li>
+<li>image caption</li>
+<li>visual question answering</li>
+<li>super resolution</li>
+<li>image retrieval</li>
+<li>style transfer<h3 id="outside-vision-tasks"><a href="#outside-vision-tasks" class="headerlink" title="outside vision tasks"></a>outside vision tasks</h3></li>
+<li>Machine Translation</li>
+<li>Text Synthesis</li>
+<li>Speech Recognition</li>
+<li>Speech Synthesis</li>
+</ul>
+<h2 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h2><p>Data-driven approach:</p>
+<ol>
+<li>collect a dataset of images and labels</li>
+<li>use machine learning to train an image calssifier</li>
+<li>evaluate the classifier on a withheld set of test images<br><img src="./1512950593146.png" alt="Alt text"><br>feature learning<br>what is feature learning?[^1]<br><img src="./1512950762827.png" alt="Alt text"><br>deep learning<br><img src="./1512950785202.png" alt="Alt text"></li>
+</ol>
+<h2 id="Supervised-learning"><a href="#Supervised-learning" class="headerlink" title="Supervised learning"></a>Supervised learning</h2><p><img src="./1512951055407.png" alt="Alt text"></p>
+<h3 id="linear-regression"><a href="#linear-regression" class="headerlink" title="linear regression"></a>linear regression</h3><p><img src="./1512956741961.png" alt="Alt text"></p>
+<p>###neural network<br><img src="./1512956783266.png" alt="Alt text"><br>neural networks with many layers<br><img src="./1512956866393.png" alt="Alt text"></p>
+<p>[^1]:<br>In Machine Learning, feature learning or representation learningis a set of techniques that learn a feature: a transformation of raw data input to a representation that can be effectively exploited in machine learning tasks. This obviates manual feature engineering, which is otherwise necessary, and allows a machine to both learn at a specific task (using the features) and learn the features themselves.<br>Feature learning is motivated by the fact that machine learning tasks such as classification often require input that is mathematically and computationally convenient to process. However, real-world data such as images, video, and sensor measurement is usually complex, redundant, and highly variable. Thus, it is necessary to discover useful features or representations from raw data. Traditional hand-crafted features often require expensive human labor and often rely on expert knowledge. Also, they normally do not generalize well. This motivates the design of efficient feature learning techniques, to automate and generalize this.<br>Feature learning can be divided into two categories: supervised and unsupervised feature learning, analogous to these categories in machine learning generally.<br>In supervised feature learning, features are learned with labeled input data. Examples include Supervised Neural Networks, Multilayer Perceptron, and (supervised) dictionary Learning.<br>In unsupervised feature learning, features are learned with unlabeled input data. Examples include dictionary learning, independent component analysis, autoencoders, and various forms of clustering.</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/DeepLearning/" rel="tag"># DeepLearning</a>
+          
+            <a href="/tags/ComputerVision/" rel="tag"># ComputerVision</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/New-Day-of-ItchyHiker/" rel="next" title="New Day of ItchyHiker">
+                <i class="fa fa-chevron-left"></i> New Day of ItchyHiker
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/The-Economist-A-lost-lose-deal/" rel="prev" title="The Economist A lose lose deal">
+                The Economist A lose lose deal <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Vincent" />
+          <p class="site-author-name" itemprop="name">Vincent</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">Kategorien</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">Tags</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#vision-tasks"><span class="nav-number">1.</span> <span class="nav-text">vision tasks</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#outside-vision-tasks"><span class="nav-number">2.</span> <span class="nav-text">outside vision tasks</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Motivation"><span class="nav-number"></span> <span class="nav-text">Motivation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-learning"><span class="nav-number"></span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#linear-regression"><span class="nav-number">1.</span> <span class="nav-text">linear regression</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Vincent</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
