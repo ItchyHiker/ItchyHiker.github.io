@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://itchyhiker.com/"/>
-  <updated>2018-04-01T11:09:17.986Z</updated>
+  <updated>2018-04-01T11:19:37.539Z</updated>
   <id>https://itchyhiker.com/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>建站工具</title>
+    <link href="https://itchyhiker.com/%E5%BB%BA%E7%AB%99%E5%B7%A5%E5%85%B7/"/>
+    <id>https://itchyhiker.com/建站工具/</id>
+    <published>2018-04-01T11:18:10.000Z</published>
+    <updated>2018-04-01T11:19:37.539Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="免费图床"><a href="#免费图床" class="headerlink" title="免费图床"></a>免费图床</h2><blockquote><p>图床一般指的是存储图片的服务，通过外链的方式显示图片，解决因为带宽小，图片打开慢的问题。</p></blockquote><center> <strong>以下推荐只针对海外站点</strong> </center><ol><li><a href="https://simimg.com/" target="_blank" rel="noopener">simimg.com</a>:免费10TB云存储图片空间, 单张最大支持10MB . 全球CDN加速, 支持外链。不需要注册，从2008年至今都稳定运行,支持https</li><li><a href="https://sm.ms/" target="_blank" rel="noopener">SM.MS</a>: 每张图片最大5M,而且每次最多上传 10 张图片。在法律允许范围内，请随意使用本图床。经测试，图床很稳，支持https，亲测可用。</li></ol><hr><center> 持续更新 </center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;免费图床&quot;&gt;&lt;a href=&quot;#免费图床&quot; class=&quot;headerlink&quot; title=&quot;免费图床&quot;&gt;&lt;/a&gt;免费图床&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;图床一般指的是存储图片的服务，通过外链的方式显示图片，解决因为带宽小，图片打开慢的问题。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Tools/Wheels" scheme="https://itchyhiker.com/categories/Tools-Wheels/"/>
+    
+    
+      <category term="ItchyHiker.com" scheme="https://itchyhiker.com/tags/ItchyHiker-com/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GPU-Related</title>
+    <link href="https://itchyhiker.com/GPU-Related/"/>
+    <id>https://itchyhiker.com/GPU-Related/</id>
+    <published>2018-04-01T11:16:15.000Z</published>
+    <updated>2018-04-01T11:17:36.459Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><h2 id="Nvidia-Driver-Crupted"><a href="#Nvidia-Driver-Crupted" class="headerlink" title="Nvidia Driver Crupted"></a>Nvidia Driver Crupted</h2><p>跑了一晚上程序之后，回来电脑卡住，重启电脑，无法加载显卡驱动，无法使用独显，电脑分辨率降低, 运行nvidia-smi显示：</p><blockquote><p>NVIDIA-MSI has failded because it couldn’t communicate with the NVIDIA driver. Make use the latest driver is installed and running.<br>应该是强制关机后驱动损坏了，需要重新装下驱动。</p></blockquote><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><ol><li>以前下载的驱动还在电脑里面 NVIDIA-375</li><li>Ctrl + Alt + F1 进入控制台</li><li>service lightdm stop</li><li>进入驱动所在路径</li><li><p>删除原有驱动</p><blockquote><p>sudo sh NVIDIA-Linux-x86-64.375.66.run –uninstall</p></blockquote></li><li><p>重装驱动</p><blockquote><p>sudo sh NVIDIA-Linux-x86-64.375.66.run</p></blockquote></li><li>reboot, 可以正常显示进入图形界面</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Nvidia-Driver-Crupted&quot;&gt;&lt;a href=&quot;#Nvidia-Driver-Crupted&quot; class=&quot;headerlink&quot; title=&quot;Nvidia Driver Crupted&quot;&gt;&lt;/a&gt;Nvidi
+      
+    
+    </summary>
+    
+      <category term="Tools/Wheels" scheme="https://itchyhiker.com/categories/Tools-Wheels/"/>
+    
+    
+      <category term="Deep Learning" scheme="https://itchyhiker.com/tags/Deep-Learning/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode 295 Find Medium from Data Stream</title>
