@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://itchyhiker.com/"/>
-  <updated>2018-04-08T12:29:24.120Z</updated>
+  <updated>2018-04-08T12:36:07.981Z</updated>
   <id>https://itchyhiker.com/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CS231n-Lecture1</title>
+    <link href="https://itchyhiker.com/CS231n-Lecture1/"/>
+    <id>https://itchyhiker.com/CS231n-Lecture1/</id>
+    <published>2018-04-08T12:34:19.000Z</published>
+    <updated>2018-04-08T12:36:07.981Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Milestone-Paper-for-Computer-Vision"><a href="#Milestone-Paper-for-Computer-Vision" class="headerlink" title="Milestone Paper for Computer Vision"></a>Milestone Paper for Computer Vision</h2><h3 id="Normalized-Cut"><a href="#Normalized-Cut" class="headerlink" title="Normalized Cut"></a>Normalized Cut</h3><p><a href="https://simimg.com/i/6A9qa" target="_blank" rel="noopener"><img src="https://s1.ax2x.com/2018/04/04/6A9qa.md.png" alt="6A9qa.md.png"></a></p><h3 id="Face-Detection"><a href="#Face-Detection" class="headerlink" title="Face Detection"></a>Face Detection</h3><p><a href="https://simimg.com/i/6A512" target="_blank" rel="noopener"><img src="https://s1.ax2x.com/2018/04/04/6A512.md.png" alt="6A512.md.png"></a></p><h3 id="SIFT"><a href="#SIFT" class="headerlink" title="SIFT"></a>SIFT</h3><p><a href="https://simimg.com/i/6A3sQ" target="_blank" rel="noopener"><img src="https://s1.ax2x.com/2018/04/04/6A3sQ.md.png" alt="6A3sQ.md.png"></a></p><h3 id="spatial-pyramid"><a href="#spatial-pyramid" class="headerlink" title="spatial pyramid"></a>spatial pyramid</h3><p><a href="https://simimg.com/i/61okn" target="_blank" rel="noopener"><img src="https://s1.ax2x.com/2018/04/04/61okn.md.png" alt="61okn.md.png"></a></p><h3 id="HOG"><a href="#HOG" class="headerlink" title="HOG"></a>HOG</h3><p><a href="https://simimg.com/i/61nvG" target="_blank" rel="noopener"><img src="https://s1.ax2x.com/2018/04/04/61nvG.md.png" alt="61nvG.md.png"></a></p><h2 id="DataSets-and-Tasks"><a href="#DataSets-and-Tasks" class="headerlink" title="DataSets and Tasks"></a>DataSets and Tasks</h2><h3 id="PASCAL-2007"><a href="#PASCAL-2007" class="headerlink" title="PASCAL 2007"></a>PASCAL 2007</h3><p><a href="https://simimg.com/i/61gzK" target="_blank" rel="noopener"><img src="https://s1.ax2x.com/2018/04/04/61gzK.md.png" alt="61gzK.md.png"></a></p><h3 id="ImageNET"><a href="#ImageNET" class="headerlink" title="ImageNET"></a>ImageNET</h3><p><a href="https://simimg.com/i/61Ihi" target="_blank" rel="noopener"><img src="https://s1.ax2x.com/2018/04/04/61Ihi.md.png" alt="61Ihi.md.png"></a></p><h3 id="ImageNET-Large-Scale-Visual-Recognition-Challenge"><a href="#ImageNET-Large-Scale-Visual-Recognition-Challenge" class="headerlink" title="ImageNET Large Scale Visual Recognition Challenge"></a>ImageNET Large Scale Visual Recognition Challenge</h3><p><a href="https://simimg.com/i/61lBX" target="_blank" rel="noopener"><img src="https://s1.ax2x.com/2018/04/04/61lBX.md.png" alt="61lBX.md.png"></a></p><p>The break through of neural network in 2012, but the neural network wasn’t invent onvernight. </p><center> <strong>GPU + DATA!</strong> </center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Milestone-Paper-for-Computer-Vision&quot;&gt;&lt;a href=&quot;#Milestone-Paper-for-Computer-Vision&quot; class=&quot;headerlink&quot; title=&quot;Milestone Paper for Co
+      
+    
+    </summary>
+    
+      <category term="MOOC" scheme="https://itchyhiker.com/categories/MOOC/"/>
+    
+    
+      <category term="CS231n" scheme="https://itchyhiker.com/tags/CS231n/"/>
+    
+      <category term="Computer Vision" scheme="https://itchyhiker.com/tags/Computer-Vision/"/>
+    
+      <category term="Deep Learning" scheme="https://itchyhiker.com/tags/Deep-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>redirect-caffe-training-log</title>
+    <link href="https://itchyhiker.com/redirect-caffe-training-log/"/>
+    <id>https://itchyhiker.com/redirect-caffe-training-log/</id>
+    <published>2018-04-08T12:32:48.000Z</published>
+    <updated>2018-04-08T12:33:31.727Z</updated>
+    
+    <content type="html"><![CDATA[<p>caffe中自带可以画图的工具,在caffe路径下：</p><pre><code>./tools/extra/parse_log.sh./tools/extra/extract_seconds.py./tools/extra/plot_training_log.py.example</code></pre><ol><li>日志重定向：在训练命令中加入一行参数，实现log日志定向到文件：<br>caffe train –sover=/path/to/solver &gt;log/***.log 2&gt;&amp;1</li><li>解析训练数据<br>将前面说的三个脚本拷贝到log文件下<br>sh parse_log.sh xxxx.log</li><li>生成图片<br>python plot_traning_log.py [0-7] save.png xxxx.log</li></ol><p>可以选择的各种图类型：<br><a href="https://simimg.com/i/6ha3u" target="_blank" rel="noopener"><img src="https://s1.ax2x.com/2018/04/03/6ha3u.md.png" alt="6ha3u.md.png"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;caffe中自带可以画图的工具,在caffe路径下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./tools/extra/parse_log.sh
+./tools/extra/extract_seconds.py
+./tools/extra/plot_training_log.py.
+      
+    
+    </summary>
+    
+      <category term="Tools/Wheels" scheme="https://itchyhiker.com/categories/Tools-Wheels/"/>
+    
+    
+      <category term="caffe" scheme="https://itchyhiker.com/tags/caffe/"/>
+    
+  </entry>
   
   <entry>
     <title>The-Big-Chill</title>
@@ -46,7 +103,7 @@
     <link href="https://itchyhiker.com/ThinkPad-TrackPoint/"/>
     <id>https://itchyhiker.com/ThinkPad-TrackPoint/</id>
     <published>2018-04-08T12:24:09.000Z</published>
-    <updated>2018-04-08T12:25:09.694Z</updated>
+    <updated>2018-04-08T12:31:41.373Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>Thinkad 大概是对Linux支持最好的笔记本了，Ubuntu大概是对硬件支持最好的Linux发行版了。</p></blockquote><p>Ubuntu下没有默认对小红点TrackPoint设置的界面，开始用起来的时候我的右手食指简直就是折磨，虽然有按G点的感觉但是也禁不住一点按到晚啊。</p><p>今天查了下如何在Ubuntu下修改小红点的速度，让它轻轻一按就能飞上天。</p><ol><li>取得小红点的ID<br> xinput list grep TrackPoint<br> 我的是14</li><li><p>获得ID设置</p><p>xinput list-props 14 </p></li></ol><p><a href="https://simimg.com/i/IDEuu" target="_blank" rel="noopener"><img src="https://s1.ax2x.com/2018/04/06/IDEuu.md.png" alt="IDEuu.md.png"></a><br>输出的第5、6行就是关于小红点的速度设置。</p><pre><code>Device Accel Constant Deceleration (274):    0.200000Device Accel Adaptive Deceleration (275):    200.000000</code></pre><p>其中括号里的整数就是该项设置的ID,后面的小数是该项设置的参数值。ID为274(我的机器)代表的是小红点的固定阻力值(Constant Deceleration),取值范围是 [0,1];ID为275代表的是随力度减弱时阻力增加的速度,即小红点停下来的速度,取值范围是 [1,?]。一般来说设置264就够了，我设置为200。</p><ol start="3"><li><p>改变Constant Deceleration和Adaptive Deceleration</p><p> xinput set-prop 14 274 0.25<br> xinput set-prop 14 275 100<br><strong>这里可以根据自己调节后的手感自己设置!</strong></p></li><li>加入到启动运行命令<br>~/.xprofile 或者其它启动运行的命令文件</li></ol>]]></content>
     
@@ -62,8 +119,12 @@
     
     </summary>
     
+      <category term="Tools/Wheels" scheme="https://itchyhiker.com/categories/Tools-Wheels/"/>
     
-      <category term="ThinkPad UBuntu" scheme="https://itchyhiker.com/tags/ThinkPad-UBuntu/"/>
+    
+      <category term="ThinkPad" scheme="https://itchyhiker.com/tags/ThinkPad/"/>
+    
+      <category term="UBuntu" scheme="https://itchyhiker.com/tags/UBuntu/"/>
     
   </entry>
   
