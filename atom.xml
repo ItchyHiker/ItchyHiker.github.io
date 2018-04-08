@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://itchyhiker.com/"/>
-  <updated>2018-04-08T12:21:40.107Z</updated>
+  <updated>2018-04-08T12:29:24.120Z</updated>
   <id>https://itchyhiker.com/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>The-Big-Chill</title>
+    <link href="https://itchyhiker.com/The-Big-Chill/"/>
+    <id>https://itchyhiker.com/The-Big-Chill/</id>
+    <published>2018-04-08T12:26:19.000Z</published>
+    <updated>2018-04-08T12:29:24.120Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.pinimg.com/564x/80/77/53/807753701c5a8bf8a18484728ed49c81.jpg" alt="thebigchill"><br>This movie by Lawrence Kasdan is about reminisence of youth and the original college ambitions in my top film list. It foretells what we will ultimately be like when we are in our 30s.  The plot goes like this: seven baby boomers are brought together by the fenural of their best college friend, Alex. Alex who commited suicide, was once the most standout of them at college. At the fenural, one of the seven played Alex’s favorite song “You cann’t always get what you want” to in memory of him which was originally performed by The Rolling Stones. And the song is what happened to them when these hippies in the 1960s became the yappies in the 1980s. They turned to adulthood, consumerhood, parenthood, drunkenhood, adulteryhood and regrethood. Now I will be out of college soon and I am always wondering, who I am, why I am here and in which direction I will go. At the time of the next reunion, will I regret I hadn’t got what I want. The answer is definitely yes. It is indeed an appropriate movie for graduation. </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://i.pinimg.com/564x/80/77/53/807753701c5a8bf8a18484728ed49c81.jpg&quot; alt=&quot;thebigchill&quot;&gt;&lt;br&gt;This movie by Lawrence Kasdan is
+      
+    
+    </summary>
+    
+      <category term="Diary" scheme="https://itchyhiker.com/categories/Diary/"/>
+    
+    
+      <category term="Movie" scheme="https://itchyhiker.com/tags/Movie/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ThinkPad TrackPoint UBuntu 16.04</title>
+    <link href="https://itchyhiker.com/ThinkPad-TrackPoint/"/>
+    <id>https://itchyhiker.com/ThinkPad-TrackPoint/</id>
+    <published>2018-04-08T12:24:09.000Z</published>
+    <updated>2018-04-08T12:25:09.694Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Thinkad 大概是对Linux支持最好的笔记本了，Ubuntu大概是对硬件支持最好的Linux发行版了。</p></blockquote><p>Ubuntu下没有默认对小红点TrackPoint设置的界面，开始用起来的时候我的右手食指简直就是折磨，虽然有按G点的感觉但是也禁不住一点按到晚啊。</p><p>今天查了下如何在Ubuntu下修改小红点的速度，让它轻轻一按就能飞上天。</p><ol><li>取得小红点的ID<br> xinput list grep TrackPoint<br> 我的是14</li><li><p>获得ID设置</p><p>xinput list-props 14 </p></li></ol><p><a href="https://simimg.com/i/IDEuu" target="_blank" rel="noopener"><img src="https://s1.ax2x.com/2018/04/06/IDEuu.md.png" alt="IDEuu.md.png"></a><br>输出的第5、6行就是关于小红点的速度设置。</p><pre><code>Device Accel Constant Deceleration (274):    0.200000Device Accel Adaptive Deceleration (275):    200.000000</code></pre><p>其中括号里的整数就是该项设置的ID,后面的小数是该项设置的参数值。ID为274(我的机器)代表的是小红点的固定阻力值(Constant Deceleration),取值范围是 [0,1];ID为275代表的是随力度减弱时阻力增加的速度,即小红点停下来的速度,取值范围是 [1,?]。一般来说设置264就够了，我设置为200。</p><ol start="3"><li><p>改变Constant Deceleration和Adaptive Deceleration</p><p> xinput set-prop 14 274 0.25<br> xinput set-prop 14 275 100<br><strong>这里可以根据自己调节后的手感自己设置!</strong></p></li><li>加入到启动运行命令<br>~/.xprofile 或者其它启动运行的命令文件</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;Thinkad 大概是对Linux支持最好的笔记本了，Ubuntu大概是对硬件支持最好的Linux发行版了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ubuntu下没有默认对小红点TrackPoint设置的界面，开始用起来的时候我的右手食指简直就
+      
+    
+    </summary>
+    
+    
+      <category term="ThinkPad UBuntu" scheme="https://itchyhiker.com/tags/ThinkPad-UBuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>Great Movies: The Silence of The Lambs</title>
